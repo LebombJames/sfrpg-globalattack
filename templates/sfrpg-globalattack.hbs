@@ -1,0 +1,26 @@
+{{log 'template' this}}
+<form>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Modifier</th>
+            <th>Notes</th>
+            <th>Delete</th>
+        </tr>
+        {{#each this}} 
+        <tr data-modifier-index="{{@key}}">
+            <td  class="sfga-name" style="width: 30%;"><input type="text" name="name" value="{{bonus.name}}"></td>
+            <td  class="sfga-mod" style="width: 5%;"><input type="text" name="modifier" value="{{bonus.modifier}}"></td>
+            <td class="sfga-note"><input type="text" name="notes" value="{{bonus.notes}}"></td>
+            <td  class="sfga-delete" style="width: 5%;"><button type="button" title="delete" data-action="delete">
+                <i class="fas fa-trash"></i>
+            </button></td>
+        </tr>
+        {{/each}}
+    </table>
+
+    <div class="flexrow">
+        <button type="button" title="Add" data-action="create"><i class="fas fa-plus"></i>Add Modifier</button>
+        <button type="button" title="Defaults" data-action="defaults"><i class="fas fa-undo"></i>Reset to default</button>
+    </div> 
+</form>
