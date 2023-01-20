@@ -16,7 +16,9 @@ Hooks.once('ready', async function() {
     SfrpgGlobalattack.setDefaults(CONFIG.SFRPG.globalAttackRollModifiers);
     console.log(SfrpgGlobalattack.ID | 'SFRPG-globalattack active - defaults set');
 
-    CONFIG.SFRPG.globalAttackRollModifiers = game.settings.get(SfrpgGlobalattack.ID, 'bonuses')
+    if(game.settings.get(SfrpgGlobalattack.ID, 'bonuses')) {
+        CONFIG.SFRPG.globalAttackRollModifiers = game.settings.get(SfrpgGlobalattack.ID, 'bonuses');
+    }
 });
 
 

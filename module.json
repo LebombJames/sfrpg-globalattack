@@ -1,21 +1,12 @@
 {
-  "name": "sfrpg-globalattack",
   "title": "SFRPG Global Attack",
   "description": "Lets you edit global attack modifiers.",
-  "version": "This is auto replaced",
-  "library": "false",
-  "manifestPlusVersion": "1.0.0",
-  "minimumCoreVersion": "0.8.8",
-  "compatibleCoreVersion": "0.8.9",
-  "authors": "Sputt",
-  "systems": [
-		"sfrpg"
-	],
-  "dependencies": [
-
-  ],
-  "conflicts": [
-    
+  "version": "1.0.1",
+  "authors": [
+    {
+      "name": "Sputt",
+      "flags": {}
+    }
   ],
   "esmodules": [
     "/scripts/sfrpg-globalattack.js"
@@ -30,16 +21,33 @@
     {
       "lang": "en",
       "name": "English",
-      "path": "languages/en.json"
+      "path": "languages/en.json",
+      "flags": {}
     }
   ],
-  "url": "This is auto replaced",
-  "manifest": "This is auto replaced",
-  "download": "This is auto replaced",
+  "url": "https://github.com/Bagenholm/sfrpg-globalattack",
+  "manifest": "https://github.com/Bagenholm/sfrpg-globalattack/releases/latest/download/module.json",
+  "download": "https://github.com/Bagenholm/sfrpg-globalattack/releases/download/1.0.0/module.zip",
   "media": [
     {
       "type": "icon",
-      "url": "https://avatars2.githubusercontent.com/u/71292812?s=400&u=ccdb4eeb7abf551ca8f314e5a9bfd0479a4d3d41&v=4"
+      "url": "https://avatars2.githubusercontent.com/u/71292812?s=400&u=ccdb4eeb7abf551ca8f314e5a9bfd0479a4d3d41&v=4",
+      "loop": false,
+      "flags": {}
     }
-  ]
+  ],
+  "id": "sfrpg-globalattack",
+  "relationships": {
+    "systems": [
+      {
+        "id": "sfrpg",
+        "type": "system",
+        "compatibility": {}
+      }
+    ]
+  },
+  "compatibility": {
+    "minimum": "0.8.8",
+    "verified": "10"
+  }
 }
