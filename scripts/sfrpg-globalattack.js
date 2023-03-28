@@ -61,6 +61,7 @@ class SfrpgGlobalattackMenu extends FormApplication {
 
         SfrpgGlobalattack.log(false, "Updating global attack modifiers (formData, bonuses)", formData, bonuses)
         CONFIG.SFRPG.globalAttackRollModifiers = bonuses;
+        game.settings.set(SfrpgGlobalattack.ID, 'bonuses', CONFIG.SFRPG.globalAttackRollModifiers)
     }
 
     activateListeners(html) {
