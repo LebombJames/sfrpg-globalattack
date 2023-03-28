@@ -38,7 +38,8 @@ class SfrpgGlobalattackMenu extends FormApplication {
             submitOnChange: true,
             closeOnSubmit: false,
             config: false,
-            resizable: true
+            resizable: true,
+            submitOnClose: true
         }
 
         const mergedOptions = foundry.utils.mergeObject(defaults, overrides);
